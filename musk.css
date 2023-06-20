@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    color: white
+}
+
+.main-title-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    border-bottom: 3px solid black;
+    padding-bottom: 40px;
+}
+
+.main-title-container:before {
+    content: "";
+    position: absolute;
+    width: 80vw;
+    height: 25vw;
+
+    border-bottom: 7px solid rgb(46, 142, 187);
+}
+
+.zip2 {
+    border-radius: 10px;
+}
+
+.main-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 12.5vw;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px violet;
+    text-shadow: -5px -5px rgb(46, 142, 187), 5px 5px yellowgreen;
+    /* animation:movetext 1s ease-in infinite; */
+    margin-top: 80px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: black;
+    /* animation: move 10ms infinite ease-in; */
+
+}
+
+@keyframes move {
+    0% {
+        text-shadow: -5px -5px rgb(46, 142, 187), 5px 5px yellowgreen;
+    }
+
+    50% {
+        text-shadow: 5px 5px yellowgreen, -5px -5px rgb(46, 142, 187);
+    }
+
+    100% {
+        text-shadow: -5px -5px rgb(46, 142, 187), 5px 5px yellowgreen;
+    }
+
+}
+
+
+
+.musk-name {
+    margin-left: 250px;
+}
+
+.main-image {
+    position: absolute;
+    z-index: -1;
+}
+
+.musk-img {
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-left: -50px;
+    width: 15vw;
+    height: 15vw;
+}
+
+.information-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.intro-matter-container {
+    width: 89%;
+    height: auto;
+    background-color: yellowgreen;
+    padding: 20px;
+    color: black;
+    border-radius: 10px;
+    margin: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    line-height: 30px;
+
+    font-size: 20px;
+
+}
+
+.details-container {
+    width: 90%;
+    height: auto;
+    /* background-color: red; */
+    padding: 20px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+
+
+.details-container div .side-heading {
+    font-weight: bold;
+    margin: 0 20px 0 0;
+
+}
+
+.details-container div {
+    margin: 10px;
+}
+
+.about-musk {
+    text-align: right;
+}
+
+
+.business-career-wrapper {
+    width: 100%;
+    height: auto;
+
+}
+
+.business-career-wrapper {
+
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.business-career-container {
+    margin: 20px 0px;
+    background-color: #1DA1F2;
+    padding: 20px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    color: white;
+    height: 50%;
+}
+
+
+
+
+
+.career-title {
+    font-weight: bold;
+    font-size: 30px;
+    /* margin-left: 60px; */
+    margin-bottom: 20px;
+}
+
+
+.inner-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.career-info-container {
+    width: 70%;
+    /* background-color: rgb(46, 142, 187); */
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.details-container::before {
+    content: "";
+    width: 5px;
+    height: 180px;
+    position: absolute;
+    background-color: red;
+    left: 80px;
+    border-radius: 2px;
+}
